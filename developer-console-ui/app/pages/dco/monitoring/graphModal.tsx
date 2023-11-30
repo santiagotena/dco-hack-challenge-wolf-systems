@@ -1,15 +1,15 @@
 import { Headline, Popup, Spacer } from "@dco/sdv-ui";
-import { useState } from "react";
 
-export function GraphModal (props: any) {
-    const [closeModal, setCloseModal] = useState(false)
-    
+const GraphModal = (props: any) => {
     return <>
-    <Popup invert={true} dim show={props.show} onClose={props.onClose} style={{ zIndex: 100 }}>
+        <Popup invert={true} dim show={props.show} onClose={props.onClose} style={{ zIndex: 100 }}>
             <Headline>
-                Release ${props.releaseId}
+                {`Release ${props.releaseId} `}
             </Headline>
             <Spacer />
+            
         </Popup>
     </>
 }
+
+export default GraphModal
