@@ -60,15 +60,27 @@ const MonitoringList = ({ path }: any) => {
       Header: '',
       accessor: 'menu',
       formatter: (value: any, cell: any) => {
-         return (<Button name={"show-graph"} onClick={() => showGraph(cell.row.values.releaseId)}>Analytics View</Button>)
+         return (<Button name={"show-graph"} onClick={() => {setShowGraphPopup(true); showGraph(cell.row.values.releaseId)}}>Analytics View</Button>)
       }
     },
   ]
 
-  const showGraph = (releaseId: string) => <GraphModal releaseId={releaseId} show={setShowGraphPopup} onClose={setShowGraphPopup}/>
+  const showGraph = (releaseId: string) => {
+    const graphRes = ''
+      if (releaseId) {
+          fetch(`http://localhost:8086/api/${releaseId}`)
+              .then(res => res.json())
+              .then(res => {
+                  console.log('ghraph response ==', res)
+              })
+              .catch(error =>
+                  console.log('error in fetching graphs =', error))
+      }
+    <GraphModal releaseId={releaseId} show={showGraphPopup} onClose={setShowGraphPopup} graph={graphRes} />
+  }
 
   return (
-    <>
+    <> 
       <Table data-testid="table" columns={columns}
         data={pageData.rowData} initialSortBy={[
           {
