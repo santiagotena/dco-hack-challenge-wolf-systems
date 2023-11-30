@@ -1,0 +1,80 @@
+[
+    {
+      "releaseId": "R101",
+      "metaTrack": "string",
+      "isHardwareChangesAllowed": true,
+      "brands": [
+        "Mercedes"
+      ],
+      "models": [
+        "E-class"
+      ],
+      "countries": [
+        "Germany"
+      ],
+      "functions": [
+        {
+          "name": "string",
+          "ecuDatas": [
+            {
+              "ecu": "ecu",
+              "hardwareVersion": "1.0.9",
+              "componentId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+              "componentName": "battery",
+              "componentVersion": "15.0.8",
+              "status": "running",
+              "lastChange": "2023-01-29",
+              "actualBatteryCapacity": "500"
+            }
+          ]
+        }
+      ],
+      "releaseDate": "30-Nov-2023",
+      "createdDate": "30-Nov-2023",
+      "releaseStatus": "READY_FOR_RELEASE"
+    },
+    {
+        "releaseId": "R102",
+        "metaTrack": "string",
+        "isHardwareChangesAllowed": true,
+        "brands": [
+          "Mercedes"
+        ],
+        "models": [
+          "C-class"
+        ],
+        "countries": [
+          "Germany"
+        ],
+        "functions": [
+          {
+            "name": "string",
+            "ecuDatas": [
+              {
+                "ecu": "ecu",
+                "hardwareVersion": "1.0.9",
+                "componentId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                "componentName": "battery",
+                "componentVersion": "15.0.8",
+                "status": "running",
+                "lastChange": "2023-01-20",
+                "actualBatteryCapacity": "500"
+              }
+            ]
+          }
+        ],
+        "releaseDate": "30-Nov-2023",
+        "createdDate": "30-Nov-2023",
+        "releaseStatus": "READY_FOR_RELEASE"
+      }
+  ]
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

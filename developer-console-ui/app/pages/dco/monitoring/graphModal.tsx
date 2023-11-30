@@ -7,6 +7,7 @@ const GraphModal = (props: any) => {
                 {`Release ${props.releaseId} `}
             </Headline>
             <Spacer />
+            
         </Popup>
     </>
 }
