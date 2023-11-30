@@ -1,7 +1,6 @@
 #  Eclipse-DCO Battery Simulation Hack-Challenge
 ## What was our goal ?
-
-
+The goal of our project is to provide a tool for OEMs to test their electric vehicles in different weather conditions using SUMO simulator and WeatherAPI to make it easy to input locations for testing. Its important because batteries perform differently in different weather conditions and we simulate and monitor it using SUMO native features and our added functionality
 
 ### DCO
 Also known as  Developer Console is an active management of the complete software lifecycle tool(development, testing and release)
